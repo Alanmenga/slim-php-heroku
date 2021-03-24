@@ -9,8 +9,7 @@ que las calcule invocando la función pow).
 
 *******************************************************************************/
 define('TAM',4);
-function potencia ($v1, $v2)
-{
+function potencia ($v1, $v2) 
    $resultado= pow($v1, $v2);
    return $resultado;
 }
