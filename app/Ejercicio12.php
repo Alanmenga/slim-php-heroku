@@ -21,6 +21,6 @@ function InvertirCadena (string cadena)
 }
  
 
-echo "   ".InvertirCadena("Hola");
+echo InvertirCadena("Hola");
 
 ?>

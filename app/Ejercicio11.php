@@ -8,20 +8,18 @@ que las calcule invocando la función pow).
 
 
 *******************************************************************************/
-define('TAM',4); //definimos la constante TAM con valor de 4
-function potencia ($v1, $v2) //función para elevar a la potencia. recibe dos valores (base y exponente
-{
-   $resultado= pow($v1, $v2); //elevamos la base $v1 al exponente $v2
-   return $resultado; //devulvemos el resultado almacenado
+define('TAM',4);
+function potencia ($v1, $v2) 
+   $resultado= pow($v1, $v2);
+   return $resultado;
 }
- 
-//creamos la tabla a mostrar mediante dos bucles
+
 echo "<table border=1>";
-for ($n1=1; $n1<=TAM; $n1++) //notese que el tamaño de la tabla utiliza como referencia el valor de la constante TAM
+for ($n1=1; $n1<=TAM; $n1++) 
 {
    echo "<tr>";
    for ($n2=1; $n2<=TAM; $n2++)
-      echo "<td>". potencia($n1,$n2). "</td>"; //pasamos el valor de los bucles a la función potencia
+      echo "<td>". potencia($n1,$n2). "</td>"; 
    echo "</tr>";
 }
 echo "</table>";
