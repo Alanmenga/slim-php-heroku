@@ -150,7 +150,7 @@ echo($tri);
 $tri->SetColor("green");
 echo($tri);
 
-$rec = new Rectangulo(15, 4);
+$rec = new Rectangulo(5, 4);
 $rec->SetColor("red");
 echo($rec);
 $rec->SetColor("green");
