@@ -92,7 +92,7 @@ class Rectangulo
     }
 }
 
-$rec = new Rectangulo(new Punto(1,2), new Punto(15,6));
+$rec = new Rectangulo(new Punto(0,0), new Punto(15,6));
 $rec2 = new Rectangulo(new Punto(5,3), new Punto(20,9));
 echo($rec);
 echo($rec2);
