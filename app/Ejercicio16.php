@@ -56,8 +56,8 @@ class Rectangulo
         $this->_vertice2 = new Punto($v1->GetX(), $v3->GetY());
         $this->_vertice3 = $v3;
         $this->_vertice4 = new Punto($v3->GetX(), $v1->GetY());
-        $this->ladoUno = $v3->GetY() - $v1->GetY();//Esta bien esto????????
-        $this->ladoDos = $v3->GetX() - $v1->GetX();//Esta bien esto????????
+        $this->ladoUno = $v3->GetY() - $v1->GetY() + 1;//Esta bien esto????????
+        $this->ladoDos = $v3->GetX() - $v1->GetX() + 1;//Esta bien esto????????
         $this->perimetro = $this->ladoUno*2 + $this->ladoDos*2;
         $this->area = $this->ladoUno*$this->ladoDos;
     }
@@ -92,7 +92,7 @@ class Rectangulo
     }
 }
 
-$rec = new Rectangulo(new Punto(1,1), new Punto(15,6));
+$rec = new Rectangulo(new Punto(0,0), new Punto(15,6));
 $rec2 = new Rectangulo(new Punto(5,3), new Punto(20,9));
 echo($rec);
 echo($rec2);
