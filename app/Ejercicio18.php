@@ -56,9 +56,11 @@ class Garage
 	{
 		echo ("Razon social: $this->_razonSocial<br>
                Precio por hora: $this->_precioPorHora<br><br>");
-        foreach ($this->_autos as $i => $auto){
+        foreach ($this->_autos as $i => $auto)
+        {
             echo("Auto $i:<br>");            
             echo(Auto::MostrarAuto($auto)."<br>");
+        }
 	}
 
 	function Equals($auto)
@@ -75,20 +77,25 @@ class Garage
 
 	function Add()
 	{
-		if(!$this->Equals($auto)){
+		if(!$this->Equals($auto))
+		{
             array_push($this->_autos, $auto);
         }
-        else{
+        else
+        {
             echo "El auto ya esta en el garage<br>";
         }  
 	}
 
-	function Remove($auto){              
-        if($this->Equals($auto)){            
+	function Remove($auto)
+	{              
+        if($this->Equals($auto))
+        {            
             $i = array_search($auto, $this->_autos, true);            
             unset($this->_autos[$i]);                               
         }
-        else{
+        else
+        {
             echo "El auto no esta en el garage<br>";
         } 
     }
