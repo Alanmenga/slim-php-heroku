@@ -53,7 +53,7 @@ class Usuario
 
     public static function Listar()
     {
-        $array = LeerArchivoTxt("Usuarios.csv");
+        $array = LeerArchivoTxt("usuarios.csv");
         $mostrar = "<ul>";
         foreach ($array as $value) 
         {        
